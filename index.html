@@ -4,15 +4,115 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>ポートフォリオページ</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+    .navbar-brand {
+      color: #fff;
+    }
+    
+  .navbar { 
+      background-color: rgba(0,0,0,1);
+      color: #fff;
+    }
+    
+  #row-2nd {
+    background: url(Keiprofile.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    padding: 100px 0;
+    width: 100%;
+}
+  #midashi { 
+    color: #fff;
+  }
+
+#row-2nd-in {
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(255,255,255,0);
+    padding: 80px 0px;
+    margin: auto;
+    width: 100%;
+}
+
+  footer {
+        border-top: 1px solid#888;
+        background-color: rgba(0,0,0,0.5);
+        text-align: center;
+        padding: 10px 0;
+      }
+      
+      .copyright {
+        padding: 20px 0;
+        font-size: 12px;
+        color: #fff;
+      }
+@media only screen and (max-width: 480px) {
+    #row-2nd {
+        overflow: scroll;
+    }
+    #row-2nd-in {
+        width: 100%;
+    }  
+}
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Welcome to my profile</a>
+          </div>
+          <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">会社情報</a></li>
+              <li><a href="#">サービス</a></li>
+              <li><a href="#">ニュース</a></li>
+              <li class="active"><a href="#">お問い合わせ</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                  採用情報
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">新卒採用</a></li>
+                  <li><a href="#">キャリア採用</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+   <div id="row-2nd">
+     <h1 id="midashi">
+       <div align="right"> 岩島　慶</div></h1>
+    <div id="row-2nd-in">
+         <div align="right">
+        営業としてキャリアをスタート<br/>
+        美容師を４年間やっていた<br />
+        現在３３歳、プログラミングを勉強している<br />
+        最近ではRuby on railsを勉強中<br />
+        プログラミングを勉強して自分のサービスを作りたいと思っている。
+      </div>
+    </p>
+</div>
+   <footer>
+      <div class="copyright">© 2015 SAMPLE Inc.</div>
+    </footer>
   </body>
 </html>
