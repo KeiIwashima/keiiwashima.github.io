@@ -12,6 +12,29 @@
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <style>
+    
+    html,body {
+      height: 100%;
+    }
+    
+    #wrap {
+     width: 100%;
+     position: relative;
+     height: auto; /*IE6対策*/
+     height: 100%; /*IE6対策*/
+     min-height: 100%;
+    }
+    
+  #contents {
+     padding-bottom: 0px; /*フッターの高さと同じ*/
+     position: relative;
+     border: 1px solid #000000;
+}
+
+    * {
+      font-family:meiryo ;
+    }
+    
     .navbar-brand {
       color: #fff;
     }
@@ -19,41 +42,53 @@
   .navbar { 
       background-color: rgba(0,0,0,1);
       color: #fff;
+      padding: 0px;
+      margin: 0px 0px;
+      border: 0px;
     }
     
-  #row-2nd {
-    background: url(Keiprofile.jpg) no-repeat;
+  .row-2nd {
+    background-color:; rgba(0,0,0,1);
+    background: url(Keiprofile.jpg) ;
     background-size: cover;
     background-position: center center;
-    margin: auto;
     padding: 100px 0;
     width: 100%;
 }
+
   #midashi { 
     color: #fff;
+    margin: 10px 240px 0px 0px;
   }
 
 #row-2nd-in {
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
-    background-color: rgba(255,255,255,0);
     padding: 80px 0px;
-    margin: auto;
-    width: 100%;
+    margin: 0px 0px 0px 400px;
 }
 
-  footer {
-        border-top: 1px solid#888;
-        background-color: rgba(0,0,0,0.5);
-        text-align: center;
-        padding: 10px 0;
-      }
-      
+  #footer {
+     height: 60px;
+     position: absolute;     
+     width: 100%;
+     border-top: 1px solid#555;
+     margin: 0px 0px 0px 0px;
+     background-color: #000;
+     text-align: center;
+     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
       .copyright {
         padding: 20px 0;
         font-size: 12px;
         color: #fff;
       }
+      
 @media only screen and (max-width: 480px) {
     #row-2nd {
         overflow: scroll;
@@ -65,7 +100,9 @@
     </style>
   </head>
   <body>
+    <div id="wrap">
     <header>
+      <div id="contents">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -98,21 +135,26 @@
         </div>
       </nav>
     </header>
-   <div id="row-2nd">
+   <div class="row-2nd">
      <h1 id="midashi">
-       <div align="right"> 岩島　慶</div></h1>
+       <div align="right">岩島　慶</div></h1>
+       <div class="layertransparent">
     <div id="row-2nd-in">
-         <div align="right">
-        営業としてキャリアをスタート<br/>
-        美容師を４年間やっていた<br />
-        現在３３歳、プログラミングを勉強している<br />
+      <p>
+         <div align="center">
+        都内在住現在３３歳、<br/>
+        いままで営業を１０年間やっていたが、よい商品を顧客に提供したいと思い<br />
+        プログラミング勉強強している<br />
         最近ではRuby on railsを勉強中<br />
         プログラミングを勉強して自分のサービスを作りたいと思っている。
       </div>
     </p>
+    </div> <!-- layer transpaent -->
 </div>
-   <footer>
+</div><!-- コンテンツ -->
+   <footer id="footer">
       <div class="copyright">© 2015 SAMPLE Inc.</div>
     </footer>
+    </div><!-- wrap-->
   </body>
 </html>
