@@ -113,12 +113,25 @@
         height: auto;
         width: auto;
       }
+      
+       p.resizeimage img { 
+        width: 100%; 
+      }
+      
+      .profilepage img {
+        padding: 0px px;
+        max-width: 100px;
+        height: auto;
+        width: auto;
+        border: 10px solid #fff;
+        border-radius: 100%;
+      }
   
       footer {
         border-top: 1px solid#e7e7e7;
         background-color: #f8f8f8;
         text-align: center;
-        height: 150px;
+        max-height: 100%; 
       }
       
       .footer-nav {
@@ -150,8 +163,8 @@
               	<button type="button" class="btn btn-default navbar-btn">ログイン</button>
               </ul>
           </div>
-      </div>
         </nav>
+      </div>
           <h1>食べたい物をいつでもどこでも</h1>
     </header>
     <div class="container">
@@ -175,8 +188,14 @@
       <p class="text1">お届け可能レストラン</p>
       <p class="text2">あなたの街にある人気レストランをご指定の場所へいつでもお届けします</p>
       <p class="resizeimage">
-        <img src="restlogo.jpg" />
+        <img src="restlogo.jpg" /></P>
    </div>
+   
+   <div class="profilepage">
+     <p class="resizeimage">
+     <img src="Keiprofile.jpg" alt="Profile"></P>
+   </div>
+   
    <footer id="footer">
     <div class="footer-nav footer-link-grey footer">
       <a href="/about/">会社概要</a> •
@@ -191,9 +210,9 @@
     
     <div class="footer-social">
       <a href="http://facebook.com/" target="_blank">
-        <img src="facebook.png" target="_blank" /></a>
-      <a href="http://twitter" target="_blank">
-        <img src="twitter.png" target="_blank" /></a>
+        <img src="facebook.png" alt="Fecebook"></a>
+      <a href="http://twitter.com/" target="_blank">
+        <img src="twitter.png" alt="Twitter"></a>
     </div>
       <div class="copyright">© 2015 SAMPLE Inc.</div>
     </footer>
